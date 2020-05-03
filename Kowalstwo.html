@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+	<head>
+	<!-- Logo i nazwa -->
+		<title>GTA V</title>
+		<link rel="shortcut icon" href="file:///C:/Users/Konrad/Desktop/Strona/logo1.svg">
+		
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+
+	body {
+		font-family: Arial;
+		margin: 0;
+		}
+	
+	.header {
+		color: #C24C12;
+		padding: 100px;
+		background: url(file:///C:/Users/Konrad/Desktop/Strona/z1.jpg) center no-repeat;
+		background-size:cover;	
+		text-align: center;
+		font-size: 30px;
+		font-family: Brush Script MT;
+			}
+
+	.navbar {
+		overflow: hidden;
+		background-color: #A4A89E;
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
+		padding: 40px;
+		text-align: center;
+		font-size: 30px;
+		word-spacing: 3cm;	
+			}
+			
+		.menu { 
+		text-decoration: none;
+		color: white;
+				}
+				
+	.mySlides {display:none;}
+
+	.content {
+			padding:20px;
+			background-color: black;
+			text-align: center;
+			font-size: 20px;
+			color: white;
+			}
+			
+	.parallax {
+		  background-image: url("file:///C:/Users/Konrad/Desktop/Strona/z3.jpg");
+		  min-height: 250px; 
+		  background-attachment: fixed;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+			  }		
+			
+	.pasek {
+		background-color:black;
+		height: 50px;
+			}
+			
+	.content2 {
+		
+		background-color: #F2F2F2;
+				}
+					.col-1 {
+					float: left;
+					width: 50%;
+					background-color: #F2F2F2;
+					height: 350px;
+					text-align: center;
+							}
+					.col-2 {
+					float: left;
+					width: 50%;
+					background-color: black;
+					height: 350px;
+					text-align: center;
+					color: white;
+							}		
+			
+	.kontakt {
+		background-color: Black;
+		text-align: center;
+		padding:20px;
+		font-size: 20px;
+		color: white;
+		{
+		
+		
+	.klauzula {
+		color: black;
+		padding: 100px;
+		background-size:cover;	
+		text-align: center;
+		}
+	</style>
+	</head>
+
+	<body>
+	
+		<div class="header">
+		<h1></h1>
+		</div>
+	
+		<div class="navbar">
+			<a href="#galeria" class="menu">Gallery</a>
+			<a href="file:///C:/Users/Konrad/Desktop/Strona/oferta.html" class="menu">Buy</a>
+			<a href="#kontakt" class="menu">Help </a>
+		</div>
+		
+		<div class="w3-content w3-display-container" id="galeria">
+		<img class="mySlides" src="file:///C:/Users/Konrad/Desktop/Strona/z2.png" style="width:100%; max-height: 800px; ">
+		<img class="mySlides" src="file:///C:/Users/Konrad/Desktop/Strona/z4.jpg" style="width:100%;max-height: 800px;">
+		<img class="mySlides" src="file:///C:/Users/Konrad/Desktop/Strona/z5.jpg" style="width:100%;max-height: 800px;">
+		<img class="mySlides" src="file:///C:/Users/Konrad/Desktop/Strona/z6.jpg" style="width:100%;max-height: 800px;">
+		</div>
+		
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+ 			 var i;
+ 			 var x = document.getElementsByClassName("mySlides");
+ 			 for (i = 0; i < x.length; i++) {
+			    x[i].style.display = "none";  
+ 			 }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}    
+			  x[myIndex-1].style.display = "block";  
+			  setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+		</script>
+	
+		<div class="content">
+			<h1 style="font-family: 'URW Chancery L'; color: #C6A801 ">About the mod menu</h1>
+			<p>Our product is fully tested and undetectable when using the game! We give you more options in the game and you decide how to use it!</p>
+			<p>The menu you bought will allow me to spread my wings! By buying you support us <3.</p>
+		</div>
+		
+		<div class="parallax"></div>
+		
+		<div class="pasek">
+		</div>
+		
+		<div class="content2"  id="oferta">
+			<div class="col-1">
+				<h1 style="font-family: 'URW Chancery L'; color: #C6A801 ">Why us?</h1>
+				<p>We give you full opportunity to contact us by email!</p>
+				<p>Our product is the cheapest on the market!</p>
+				<p>We give players more options</p>
+			</div>
+			
+			<div class="col-2">
+				<h1 style="font-family: 'URW Chancery L'; color: #C6A801 ">Attention!</h1>
+				<p>We are not responsible for any damage caused! The user takes full responsibility for the use of the product.</p>
+				<p> </p>
+			</div>
+		</div>
+		
+		<div class="kontakt">
+		<h1 id="kontakt" class="section flex flex-center">Help</h1>
+		<p>Simply Game</p>
+		<p>e-mail: SimplyGamehelp@gmail.com</p>
+		</div>
+		
+		
+		
+		
+		
+		
+		<div class="klauzula">
+		<p style="text-align: center">© 2020 Simply Game. All rights reserved.</p>
+		</div>
+		
+		
+		
+		
+
+	</body>
+
+</html>
